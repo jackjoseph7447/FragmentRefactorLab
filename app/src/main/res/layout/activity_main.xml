@@ -6,6 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="edu.temple.fragmentrefactor.FunctionFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:layout_editor_absoluteX="200dp"
+        tools:layout_editor_absoluteY="296dp" />
+
     <TextView
         android:id="@+id/displayTextView"
         android:layout_width="wrap_content"
@@ -36,12 +44,12 @@
         android:layout_marginBottom="16dp"
         android:ems="10"
         android:hint="@string/enter_your_name"
+        android:importantForAutofill="no"
         android:inputType="text"
         android:minHeight="48dp"
         android:textColorHint="#8D6E63"
         app:layout_constraintBottom_toTopOf="@+id/changeButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:importantForAutofill="no" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
